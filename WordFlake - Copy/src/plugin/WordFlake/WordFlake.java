@@ -86,24 +86,4 @@ public class WordFlake extends JavaPlugin implements Listener {
                 }
                 return true;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
