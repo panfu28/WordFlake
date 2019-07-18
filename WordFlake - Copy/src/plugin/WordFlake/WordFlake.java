@@ -9,15 +9,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.ArrayList;
 
 public class WordFlake extends JavaPlugin implements Listener {
-    @Override
-    public void onEnable() {
-        saveDefaultConfig();
-        getServer().getPluginManager().registerEvents(this, this);
-        // All you have to do is adding this line in your onEnable method:
-        plugin.WordFlake.Metrics metrics = new plugin.WordFlake.Metrics(this);
-        // Optional: Add custom charts
-        metrics.addCustomChart(new plugin.WordFlake.Metrics.SimplePie("chart_id", () -> "My value"));
-    }
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event)
     {
